@@ -1,6 +1,6 @@
 <template>
     <li>
-        <span v-bind:class='{done: todo.completed}'>
+        <span v-bind:class="{done: todo.completed}">
             <input type='checkbox' v-on:change='todo.completed = !todo.completed'>
             <strong>{{index + 1}}</strong>
             {{todo.title | upperCase}}
